@@ -1,0 +1,15 @@
+[package]
+description = "An attribute macro to easily time a function."
+edition = "2021"
+name = "timed"
+version = "0.1.0"
+
+[lib]
+name = "timed"
+proc-macro = true
+
+[dependencies]
+eyre.workspace = true
+proc-macro2 = "1.0.79"
+quote = "1.0.35"
+syn = { version = "2.0.57", features = ["full"] }
